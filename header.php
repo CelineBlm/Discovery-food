@@ -7,7 +7,7 @@
 
 		<div class="middle-menu center-text"><a href="#" class="logo">
             
-            <?php the_custom_logo(thumbnail) ?>
+            <?php the_custom_logo('thumbnail'); ?>
             
             </a></div>
 
