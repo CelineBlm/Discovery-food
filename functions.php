@@ -58,6 +58,7 @@ function discovery_widgets_init() {
 add_action('after_setup_theme', 'register_discovery_menu');
 function register_discovery_menu() {
     register_nav_menu('menu-top', __('Menu Principal', 'recette'));
+    register_nav_menu('menu-top', __('Menu Secondaire', 'recette'));
 }
 
 
