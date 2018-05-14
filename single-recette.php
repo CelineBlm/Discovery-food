@@ -1,11 +1,6 @@
 <?php get_header(); ?>
     
-     <div class="main-slider">
-		<div id="slider">
 
-			<?php wd_slider(1); ?>
-		</div><!-- slider -->
-	</div><!-- main-slider -->
 
     <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 

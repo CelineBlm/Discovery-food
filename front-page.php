@@ -1,12 +1,5 @@
 <?php get_header(); ?>
-    <div class="main-slider">
-		<div id="slider">
-
-			<?php wd_slider(1); ?>
-		</div><!-- slider -->
-	</div><!-- main-slider -->
-
-
+    
 	<section class="section blog-area">
 		<div class="container">
 			<div class="row">
