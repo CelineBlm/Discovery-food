@@ -103,6 +103,37 @@ function recettes_cpt_init() {
 	);
 
 	register_post_type( 'recette', $args );
+    
+    if( function_exists('acf_add_local_field_group') ) {
+        acf_add_local_field_group(array(
+            'key' => 'infos_nutritionelles',
+            'title' => 'Infos nutritionelles',
+            'location' => array (
+                array (
+                    array (
+                        'param' => 'post_type',
+                        'operator' => '==',
+                        'value' => 'recette',
+                    ),
+                ),
+            ),
+            'fields' => array (
+                array (
+                    'key' => 'field_calories',
+                    'label' => 'Calories',
+                    'name' => 'calories',
+                    'type' => 'number',
+                ),
+                array (
+                    'key' => 'field_temps_prepa',
+                    'label' => 'Temps préparation',
+                    'instructions' => 'en minutes',
+                    'name' => 'temps_prepa',
+                    'type' => 'number',
+                ),
+            ),
+        ));
+    }
 }
 
 // hook into the init action and call create_book_taxonomies when it fires
@@ -189,75 +220,5 @@ function create_recette_taxonomies() {
 
 }
 
-add_filter( 'rwmb_meta_boxes', 'recette_meta_boxes' );
-function recette_meta_boxes( $meta_boxes ) {
-    $meta_boxes[] = array(
-        'title'      => __( 'Test Meta Box', 'recette' ),
-        'post_types' => 'recette',
-        'fields'     => array(
-            array(
-                'id'   => 'preparation',
-                'name' => __( 'preparation', 'recette' ),
-                'type' => 'time',
-            ),
-           array(
-                'id'   => 'cooking',
-                'name' => __( 'cooking', 'recette' ),
-                'type' => 'time',
-            ),
-            array(
-                'id'   => 'personnes',
-                'name' => __( 'personnes', 'textdomain' ),
-                'type' => 'number',
-            ),
-        ),
-    );
-    $meta_boxes[] = array(
-        'title'      => __( 'Nutrition facts', 'recette' ),
-        'post_types' => 'recette',
-        'fields'     => array(
-            array(
-                'id'   => 'calories',
-                'name' => __( 'calories', 'recette' ),
-                'type' => 'number',
-            ),
-           array(
-                'id'   => 'proteins',
-                'name' => __( 'proteins', 'recette' ),
-                'type' => 'number',
-            ),
-            array(
-                'id'   => 'carbs',
-                'name' => __( 'carbs', 'recette' ),
-                'type' => 'number',
-            ),
-            array(
-                'id'   => 'fat',
-                'name' => __( 'fat', 'recette' ),
-                'type' => 'number',
-            ),
-            array(
-                'id'   => 'saturates',
-                'name' => __( 'saturates', 'recette' ),
-                'type' => 'number',
-            ),
-            array(
-                'id'   => 'fibre',
-                'name' => __( 'fibre', 'recette' ),
-                'type' => 'number',
-            ),
-            array(
-                'id'   => 'sugar',
-                'name' => __( 'sugar', 'recette' ),
-                'type' => 'number',
-            ),
-            array(
-                'id'   => 'salt',
-                'name' => __( 'salt', 'recette' ),
-                'type' => 'number',
-            ),
-        ),
-    );
-    return $meta_boxes;
-}
+
 

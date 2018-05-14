@@ -16,58 +16,7 @@
                 
             </div>
 
-        <div id="informations">
-        <dl class="general">
-            <dt> Préparation : </dt>
-            <dd><?php echo rwmb_meta('preparation'); ?></dd>
-            
-            <dt> Cuisson : </dt>
-            <dd><?php echo rwmb_meta('cooking'); ?></dd>
-            
-            <dt> Difficulté : </dt>
-            <dd><?php the_terms( $post->ID, 'difficulte'); ?></dd>
-            
-            <dt> Personnes : </dt>
-            <dd><?php echo rwmb_meta('personnes'); ?></dd>
-            
-        </dl>
-    
-       <div class="container">
-			<div class="row">
-       <div class="col-md-6 col-lg-4 col-md-12">
-        <dl class="nutrition">
-            
-            <dt> Calories </dt>
-            <dd><?php echo rwmb_meta('calories'); ?></dd>
-            
-            <dt> Protéines</dt>
-            <dd><?php echo rwmb_meta('proteins'); ?></dd>
-            
-            <dt> Glucides </dt>
-            <dd><?php echo rwmb_meta('carbs'); ?></dd>
-            
-            <dt> Graisses </dt>
-            <dd><?php echo rwmb_meta('fat'); ?></dd>
-            
-            <dt> dont saturés </dt>
-            <dd><?php echo rwmb_meta('saturates'); ?></dd>
-            
-            <dt> Fibres </dt>
-            <dd><?php echo rwmb_meta('fibre'); ?></dd>
-            
-            <dt> Sucre </dt>
-            <dd><?php echo rwmb_meta('sugar'); ?></dd>
-            
-            <dt> Sel </dt>
-            <dd><?php echo rwmb_meta('salt'); ?></dd>
-                
-        </dl>
         
-        <dl class="ingredients">
-                <dt> Ingrédients </dt>
-            <dd><?php the_terms( $post->ID, 'ingredient'); ?></dd>
-        </dl>
-            </div>
             
             <div class="col-md-6 col-lg-4 col-md-12">
         <dl class="recette-post">
@@ -78,6 +27,9 @@
         
       </div>  
                 </div>
+                
+<p><?php the_field('field_calories');?> cal</p>
+<p><?php the_field('field_temps_prepa');?> minutes</p>
 
  <aside id="sidebar" class="col-md-6 col-lg-4 col-md-12">
                    <ul>
