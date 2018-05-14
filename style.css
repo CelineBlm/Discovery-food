@@ -305,9 +305,6 @@ header .main-menu li.drop-down a.mouseover + ul.drop-down-menu{ display: block;
 	100%{ opacity: 1; }
 }
 
-/* NAV ICON */
-
-
 
 
 /* ---------------------------------
