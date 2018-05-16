@@ -30,8 +30,15 @@
       </div>  
                 </div>
                 
+<h2>Valeurs nutritionnelles</h2>
 <p><?php the_field('field_calories');?> cal</p>
+<p><?php the_field('field_glucides');?> g</p>
+<p><?php the_field('field_proteines');?> g</p>
+<p><?php the_field('field_lipides');?> g</p>
+
+<h2>Temps total pour cuisiner <?php the_title(); ?></h2>
 <p><?php the_field('field_temps_prepa');?> minutes</p>
+<p><?php the_field('field_temps_cuisson');?> minutes</p>
 
  <aside id="sidebar" class="col-md-6 col-lg-4 col-md-12">
                    <ul>

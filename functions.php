@@ -126,10 +126,39 @@ function recettes_cpt_init() {
                     'type' => 'number',
                 ),
                 array (
+                    'key' => 'field_glucides',
+                    'label' => 'Glucides',
+                    'name' => 'glucides',
+                    'type' => 'number',
+                ),
+                
+                array (
+                    'key' => 'field_proteines',
+                    'label' => 'Protéines',
+                    'name' => 'proteines',
+                    'type' => 'number',
+                ),
+                
+                array (
+                    'key' => 'field_lipides',
+                    'label' => 'Lipides',
+                    'name' => 'lipides',
+                    'type' => 'number',
+                ),
+                
+                array (
                     'key' => 'field_temps_prepa',
                     'label' => 'Temps préparation',
                     'instructions' => 'en minutes',
                     'name' => 'temps_prepa',
+                    'type' => 'number',
+                ),
+                
+                array (
+                    'key' => 'field_temps_cuisson',
+                    'label' => 'Temps cuisson',
+                    'instructions' => 'en minutes',
+                    'name' => 'temps_cuisson',
                     'type' => 'number',
                 ),
             ),
