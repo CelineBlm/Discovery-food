@@ -6,7 +6,7 @@
     <body <?php body_class() ?>>
     <header>
 
-		<div class="middle-menu center-text"><a href="#" class="logo">
+		<div class="middle-menu center-text"><a href="index.php" class="logo">
             
             <?php the_custom_logo('thumbnail'); ?>
             
