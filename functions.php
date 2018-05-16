@@ -29,7 +29,8 @@ function discovery_enqueue_style() {
  */
 add_action('wp_enqueue_scripts', 'discovery_enqueue_script');
 function discovery_enqueue_script() {
-    wp_enqueue_script('script', 'slider.js', array('jquery'));
+    wp_enqueue_script('script', get_template_directory_uri() . '/script/script.js', array('jquery'));
+    wp_enqueue_script('lory', get_template_directory_uri() . '/script/lory.min.js', array('jquery'));
 }
 
 /**
