@@ -434,7 +434,7 @@ header .main-menu li.drop-down a.mouseover + ul.drop-down-menu{ display: block;
  * (optional) define here the style definitions which should be applied on the slider container
  * e.g. width including further controls like arrows etc.
  */
-.slider {position:relative;}
+.slider {}
 
 .frame {
     /**
@@ -463,6 +463,9 @@ header .main-menu li.drop-down a.mouseover + ul.drop-down-menu{ display: block;
     width: 880px;
 }
 
+.slider{
+    position: relative;
+}
 
 .prev, .next {
     position: absolute;
@@ -484,7 +487,6 @@ header .main-menu li.drop-down a.mouseover + ul.drop-down-menu{ display: block;
     width: 25px;
 }
             
-
 
 /* ABOUT AUTHOR */
 
