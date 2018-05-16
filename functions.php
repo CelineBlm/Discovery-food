@@ -29,8 +29,7 @@ function discovery_enqueue_style() {
  */
 add_action('wp_enqueue_scripts', 'discovery_enqueue_script');
 function discovery_enqueue_script() {
-    wp_enqueue_script('script', 'script/script.js', array('jquery'));
-    wp_enqueue_script('lory', 'script/lory.min.js', array('jquery'));
+    wp_enqueue_script('script', 'slider.js', array('jquery'));
 }
 
 /**
@@ -59,7 +58,7 @@ function discovery_widgets_init() {
 add_action('after_setup_theme', 'register_discovery_menu');
 function register_discovery_menu() {
     register_nav_menu('menu-top', __('Menu Principal', 'recette'));
-    register_nav_menu('menu-top', __('Menu Secondaire', 'recette'));
+    register_nav_menu('menu-left', __('Menu Secondaire', 'recette'));
 }
 
 
