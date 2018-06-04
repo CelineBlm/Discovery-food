@@ -1,3 +1,3 @@
-        <?php wp_footer(); ?>
+<p>Tous droits réservés</p>
     </body>
 </html>
