@@ -13,7 +13,7 @@
             </a></div>
 
 		<ul id="main-menu"><li>
-                    <?php wp_nav_menu(array('menu' => 'menu-top')); ?>
+                    <?php wp_nav_menu(array('theme_location' => 'menu-top')); ?>
                     </li>
                     </ul>
 		<!-- conatiner -->
