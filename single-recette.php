@@ -21,9 +21,9 @@
         
             
             <div class="col-md-6 col-lg-4 col-md-12">
-        <dl class="recette-post">
+       
             <p><?php the_content(); ?> </p>
-                </dl>
+                
             </div>
                 </div></div>
         
