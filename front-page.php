@@ -11,11 +11,7 @@
 						<div class="single-post">
 							<div class="image-wrapper"><?php the_post_thumbnail('thumbnail');?></div>
 
-							<div class="icons">
-								<div class="left-area"> 
-									   <?php the_terms( $post->ID, 'categorie', '<p class="btn category-btn" href="#">', ' ', '</p>'); ?> 
-								</div>
-							</div>
+							
 							<p class="date"><em><?php the_date('d M Y'); ?></em></p>
                             <h3 class="title"><a href="#"><b class="light-color"><?php the_title() ?></b></a></h3>
                                     <p><?php the_excerpt() ?></p>
