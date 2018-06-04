@@ -203,6 +203,37 @@ body{
     max-width: 50%;
   }
 
+ .aside_recipe{
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 25%
+        -ms-flex: 0 0 25%;
+            flex: 0 0 25%;
+    max-width: 25%;
+     float: left;
+     background: #FFAD4D;
+     padding: 1.5em;
+     color: white;
+     margin-right: 4em;
+     
+  }
+
+ .aside_recipe h2{
+    font-size: 1em;
+     font-weight: 600;
+  }
+
+#time{
+    padding-top: 2em;
+}
+
+ .recipe_details{
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 100%;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    max-width: 100%;
+     display: block;
+  }
 
 h1, h2, h3, h4, h5, h6, p, a, ul, span, li, img, inpot, button{ 
     margin: 0; 
