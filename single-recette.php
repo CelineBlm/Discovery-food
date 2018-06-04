@@ -47,15 +47,7 @@
                        </li>
                    </ul>
                     
-                      <h3>CATEGORIES</h3>
-                       <?php $terms = get_terms('categorie');
-                        foreach ( $terms as $term ) {?>
-                       <p class="btn btn-category">
-                         
-                           <a href="#"><?php echo $term->name;} ?> </a>
-
-                           </p>
-
+            
 
 <?php endwhile; else : ?>
 	<p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>

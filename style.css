@@ -440,7 +440,7 @@ header .main-menu li.drop-down a.mouseover + ul.drop-down-menu{ display: block;
     /**
      * (optional) wrapper width, specifies width of the slider frame.
      */
-    width: 880px;
+    width: 100%;
 
     position: relative;
     font-size: 0;
@@ -450,12 +450,13 @@ header .main-menu li.drop-down a.mouseover + ul.drop-down-menu{ display: block;
 }
 
 .slides {
-    display: inline-block;
+    display: block;
 }
 
 .slides li {
     position: relative;
     display: inline-block;
+    width: 100%;
 
     /**
      * (optional) if the content inside the slide element has a defined size.
