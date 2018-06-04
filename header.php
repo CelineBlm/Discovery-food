@@ -26,7 +26,7 @@
            <?php $the_query = new WP_Query( array( 'post_type' => 'recette' ) ); ?>
               <?php if ( $the_query->have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
            
-            <li class="js_slide"><?php the_post_thumbnail('thumbnail');?></li>
+            <li class="js_slide"><a href="<?php echo get_permalink(); ?>"><?php the_post_thumbnail('medium');?></a></li>
             
             <?php endwhile; ?>
            <?php endif; ?>

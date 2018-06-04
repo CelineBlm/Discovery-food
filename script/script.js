@@ -1,7 +1,7 @@
-    document.addEventListener('DOMContentLoaded', function () {
-        var simple = document.querySelector('#slider');
-        
-        lory(simple, {
-            infinite: 1
+   document.addEventListener('DOMContentLoaded', function () {
+        var rewind_percentage = document.querySelector('.js_slider');
+
+        lory(rewind_percentage, {
+            rewind: true
         });
     });
