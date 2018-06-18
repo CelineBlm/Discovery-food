@@ -5,6 +5,7 @@
  */
 add_theme_support('post-thumbnails');
 add_image_size( 'miniature-article', 900, 800, true );
+add_image_size( 'image-slider', 2500, 200, true );
 add_theme_support('html5');
 add_theme_support('custom-background');
 add_theme_support('custom-logo');

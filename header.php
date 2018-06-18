@@ -28,7 +28,7 @@
               <?php if ( $the_query->have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
            
            
-            <li class="js_slide"><a href="<?php echo get_permalink(); ?>"><?php the_post_thumbnail('medium');?></a></li>
+            <li class="js_slide"><a href="<?php echo get_permalink(); ?>"><?php the_post_thumbnail('image-slider');?></a></li>
             
             <?php endwhile; ?>
            <?php endif; ?>
