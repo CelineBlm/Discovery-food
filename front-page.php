@@ -9,7 +9,7 @@
                            <?php $the_query = new WP_Query( array( 'post_type' => 'recette' ) ); ?>
                                 <?php if ( $the_query->have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 						<div class="single-post">
-							<div class="image-wrapper"><?php the_post_thumbnail('thumbnail');?></div>
+							<div class="image-wrapper"><?php the_post_thumbnail('miniature-article');?></div>
 
 							<div class="icons">
 								<ul class="left-area"> 
