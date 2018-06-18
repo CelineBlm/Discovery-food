@@ -16,6 +16,7 @@ Text Domain: discovery
             GENERAL
 --------------------------------- */
 
+
 html{ 
     font-size: 100%; 
     height: 100%;  
@@ -30,8 +31,9 @@ body{
     height: 100%; 
     margin: 0; 
     font-weight: 400; 
+    background: #f4ebdc;
 	color: #000; 
-    background-color: rgba(255, 173, 77, 0.1); 
+ 
 }
 
 /*body.logged-in header {
@@ -193,7 +195,7 @@ body{
     -webkit-flex: 0 0 33.333333%; 
         -ms-flex: 0 0 33.333333%; 
             flex: 0 0 33.333333%; 
-    max-width: 33.333333%; 
+    max-width: 25%; 
      padding-left: 2em;
 }
 
@@ -301,6 +303,12 @@ b{
 
 img{ 
     width: 100%; 
+    border-radius: 20px;
+}
+
+.js_slider li img{ 
+    width: 100%; 
+    border-radius: 0;
 }
 
 .main-menu li{
@@ -320,7 +328,7 @@ button{
     outline: 0; 
     border: 0; 
     background: none; 
-    cursor: pointer; 
+    cursor: pointer;
 }
 
 b.light-color{ 
@@ -333,44 +341,27 @@ b.light-color{
         TOUTES LES PAGES
 --------------------------------- */
 
-.btn{ 
-    font-size: .9em; 
-    padding: 15px 30px; 
+btn{ 
+    font-size: 0.7em; 
+    padding: 0.5em; 
     border-radius: 1px; 
     letter-spacing: 2px; 
-	border: 1px solid #FFAD4D; 
-    background: #FFAD4D; 
+    border-radius: 20px;
     color: #fff; 
     display: block;
 }
 
-.btn-category{ 
-    font-size: .9em; 
-    width: 50%; 
-    padding: 15px 30px; 
+.category-btn, .btn-date{ 
+    font-size: 0.7em; 
+    padding: 0.5em; 
+    width: 30%
     border-radius: 1px; 
     letter-spacing: 2px; 
-	text-align: center; 
-    border: 1px solid #FFAD4D; 
-    background: #FFAD4D; 
-    color: #fff; 
-    display: block; 
-    margin-bottom: 2em;
-}
-
-.btn:hover{ 
-    color: #FFAD4D; 
-    background: none; 
-}
-
-.btn-2{ 
-    background: none; 
-    color: #FFAD4D; 
-}
-
-.btn-2:hover{ 
-    background: #FFAD4D; 
-    color: #fff; 
+    border-radius: 20px;
+    background: #feb47b;  /* fallback for old browsers */
+    background: #feb47b;  /* Chrome 10-25, Safari 5.1-6 */
+    background: #feb47b; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #fff;  
 }
 
 
@@ -536,6 +527,12 @@ header .main-menu li.drop-down a.mouseover + ul.drop-down-menu{ display: block;
     margin-bottom: 60px; 
 }
 
+.single-post{
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 5%;
+    border-radius: 10px;
+}
+
 
 .single-post .icons{ 
     overflow: hidden; 
@@ -543,8 +540,9 @@ header .main-menu li.drop-down a.mouseover + ul.drop-down-menu{ display: block;
     margin: 30px 0 10px; 
 }
 
-.single-recipe .recipe img{
+.single-recipe img{
     width: 100%;
+    height: auto;
 }
 
 .single-recipe .general dt {
@@ -561,11 +559,6 @@ header .main-menu li.drop-down a.mouseover + ul.drop-down-menu{ display: block;
     text-align: center;
 }
 
-.single-post .icons .caegory-btn{ 
-    padding: 0 20px; 
-    height: 30px; 
-    line-height: 30px; 
-}
 
 .single-post .icons ul.social-icons{ 
     color: #666; 
@@ -587,18 +580,30 @@ header .main-menu li.drop-down a.mouseover + ul.drop-down-menu{ display: block;
     color: #999; 
 }
 
+.single-post span{
+    width: 100%;
+    padding-bottom:2em;
+}
+
 .single-post .read-more-btn{ 
-    clear: both; 
-    margin-top: 30px; 
     box-shadow: 1px 10px 15px rgba(0,0,0, .15); 
-	border: 1px solid #FFAD4D; 
-    background: #fff; 
-    color: #FFAD4D; 
+	font-size: 0.7em; 
+    width: 30%;
+    padding: 1em; 
+    border-radius: 1px; 
+    letter-spacing: 2px; 
+    border-radius: 20px;
+    background: #ff7e5f;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #feb47b, #ff7e5f);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #feb47b, #ff7e5f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #fff; 
+    display: block;
+    margin: auto;
 }
 
 .single-post .read-more-btn:hover{ 
     box-shadow: 1px 3px 15px rgba(0,0,0, .15); 
-    background: #FFAD4D;
+    background: #ff7e5f;
     color: #fff; 
 }
 	
@@ -630,8 +635,11 @@ header .main-menu li.drop-down a.mouseover + ul.drop-down-menu{ display: block;
             SIDEBAR 
 --------------------------------- */
 
-.sidebar-section{ 
-    margin-bottom: 50px; 
+.sidebar{  
+    background-color: rgba(255, 255, 255, 0.9);
+    margin-left: 5%;
+    padding: 5%;
+    border-radius: 10px;
 }
 
 .sidebar-section .title{
@@ -757,7 +765,6 @@ header .main-menu li.drop-down a.mouseover + ul.drop-down-menu{ display: block;
 
 .latest-post .post-info{ margin-left: 100px; }
 
-.latest-post .category-btn{ padding: 5px 10px; margin-bottom: 5px; }
 
 .latest-post .date{ margin-top: 5px; color: #888; }
 

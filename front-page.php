@@ -12,13 +12,15 @@
 							<div class="image-wrapper"><?php the_post_thumbnail('thumbnail');?></div>
 
 							<div class="icons">
-								<div class="left-area"> 
-									   <?php the_terms( $post->ID, 'categorie', '<p class="btn category-btn" href="#">', ' ', '</p>'); ?> 
-								</div>
+								<ul class="left-area"> 
+									   <?php the_terms( $post->ID, 'categorie', '<li class="btn category-btn" href="#">', ' ', '</li>'); ?> 
+									   <li class="btn btn-date"><em><?php the_date('d M Y'); ?></em></li>
+								</ul>
 							</div>
-							<p class="date"><em><?php the_date('d M Y'); ?></em></p>
+							
                             <h3 class="title"><a href="<?php echo get_permalink(); ?>"><b class="light-color"><?php the_title() ?></b></a></h3>
-                                    <p><?php the_excerpt() ?></p>
+                                 
+                                        <span><?php the_excerpt() ?></span>
 
                             <a class="btn read-more-btn" href="<?php echo get_permalink(); ?>">Lire la recette</a>
                                   
