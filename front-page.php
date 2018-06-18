@@ -31,7 +31,7 @@
                     </div>
                 </div>
                
-                   <aside id="sidebar">
+                   <aside class="sidebar">
                    <ul>
                        <li>
                          <?php dynamic_sidebar( 'right-sidebar' ); ?>  

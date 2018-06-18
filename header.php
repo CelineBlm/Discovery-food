@@ -13,14 +13,14 @@
             
             </a></div>
 
-		<ul id="main-menu"><li>
+		<ul class="main-menu"><li>
                     <?php wp_nav_menu(array('theme_location' => 'menu-top')); ?>
                     </li>
                     </ul>
 		<!-- conatiner -->
 		
 		
-<div id="slider" class="slider js_slider">
+<div class="slider" class="slider js_slider">
     <div class="frame js_frame">
         <ul class="slides js_slides">
            
