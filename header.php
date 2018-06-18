@@ -20,7 +20,7 @@
 		<!-- conatiner -->
 		
 		
-<div class="slider" class="slider js_slider">
+<div id="slider" class="slider js_slider">
     <div class="frame js_frame">
         <ul class="slides js_slides">
            
