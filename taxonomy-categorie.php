@@ -2,7 +2,7 @@
 
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-  <div id="single-recipe">
+  <div class="single-recipe">
         <div class="container">
 			<div class="row">
        <div class="col-md-6 col-lg-8 col-md-12">
@@ -26,7 +26,17 @@
                 </div></div>
         
       </div>  
+    
                 </div>
+                
+            <aside class="sidebar">
+               <ul>
+                   <li>
+                     <?php dynamic_sidebar( 'right-sidebar' ); ?>  
+                   </li>
+               </ul>
+            </aside>
+                
 
 <?php endwhile; else : ?>
 	<p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>

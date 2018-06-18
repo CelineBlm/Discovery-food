@@ -6,7 +6,7 @@
 
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-    <div id="single-recipe">
+    <div class="single-recipe">
         <div class="container">
             <div class="row">
                <div class="content">
@@ -14,6 +14,7 @@
        
                     <div class="recipe">
     <?php the_post_thumbnail('medium', array('class' => 'img.responsive')) ?>
+   
 
 
 
@@ -26,7 +27,7 @@
                                 <p>Lipides : <?php the_field('field_lipides');?> g</p>
                             </div>
 
-                        <div id="time"> 
+                        <div class="time"> 
                                 <h2>Temps total pour cuisiner <?php the_title(); ?></h2>
                                 <p><?php the_field('field_temps_prepa');?> minutes</p>
                                 <p>Temps de cuisson : </p>
@@ -39,10 +40,14 @@
                        </div>  
 
                    </div> 
+                   <div>
+<?php the_terms( $post->ID, 'categorie', '<p class="btn category-btn" href="#">', ' ', '</p>'); ?> 
+								</div>
+                
 
                 </div>  
 
-            <aside id="sidebar">
+            <aside class="sidebar">
                <ul>
                    <li>
                      <?php dynamic_sidebar( 'right-sidebar' ); ?>  
