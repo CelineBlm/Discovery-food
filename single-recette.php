@@ -12,7 +12,7 @@
                <div class="content">
     <h1><?php the_title(); ?> </h1>
        
-                    <div class="recipe main">
+                    <div class="recipe">
     <?php the_post_thumbnail('medium', array('class' => 'img.responsive')) ?>
 
 
