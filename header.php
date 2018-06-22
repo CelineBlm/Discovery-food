@@ -28,7 +28,11 @@
               <?php if ( $the_query->have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
            
            
+<<<<<<< Updated upstream
             <li class="js_slide"><a href="<?php echo get_permalink(); ?>"><?php the_post_thumbnail('image-slider');?></a></li>
+=======
+            <li class="js_slide"><a href="<?php echo get_permalink(); ?>"><?php the_post_thumbnail('miniature-article');?></a></li>
+>>>>>>> Stashed changes
             
             <?php endwhile; ?>
            <?php endif; ?>

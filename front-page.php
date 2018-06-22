@@ -5,10 +5,11 @@
 			<div class="row">
 
 				<div class="content ">
-					<div class="blog-posts">
+                          <div class="wrapper">
                            <?php $the_query = new WP_Query( array( 'post_type' => 'recette' ) ); ?>
                                 <?php if ( $the_query->have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 						<div class="single-post">
+						 <article class="main">
 							<div class="image-wrapper"><?php the_post_thumbnail('miniature-article');?></div>
 
 							<div class="icons">
@@ -24,23 +25,22 @@
 
                             <a class="btn read-more-btn" href="<?php echo get_permalink(); ?>">Lire la recette</a>
                                   
-                                    
+                            </article>         
 						</div><!-- single-post -->
                         
 <?php endwhile; ?>
                     <?php endif; ?>
 
-                    </div>
+                </div>
                 </div>
                
-                   <aside class="sidebar">
+                    <aside class="aside aside-1">
                    <ul>
                        <li>
                          <?php dynamic_sidebar( 'right-sidebar' ); ?>  
                        </li>
                    </ul>
-                    
-                        </aside>
+                       </aside>
             </div>
               
             </div>
