@@ -366,6 +366,7 @@ aside h3{
 
 .single-recipe{ 
     padding-top: 5em; 
+    height: auto;
 } 
  
 
@@ -381,8 +382,9 @@ aside h3{
     -webkit-flex: 0 0 100%;  
         -ms-flex: 0 0 100%;  
             flex: 0 0 100%;  
-    max-width: 75%;   
+    max-width: 35%;   
      margin-top: 2em; 
+     text-align: justify;
      display: inline-block;
      position: absolute;
   }  
