@@ -584,7 +584,39 @@ aside h3{
 .next svg, .prev svg {
     width: 25px;
 }
-            
+  
+/* ---------------------------------
+        Full Width
+--------------------------------- */
+
+.full-width h1{
+    text-align:left;
+    margin-bottom:20px;
+    margin-top:20px;
+}
+
+.full-width div{
+    width:100%;
+}
+
+/* ---------------------------------
+        Mid Width
+--------------------------------- */
+
+.mid-width h1{
+    text-align:center;
+    margin-bottom:20px;
+    margin-top:20px;
+}
+
+.mid-width div{
+    width:100%;
+}
+
+.mid-width p{
+    width:50%;
+}
+
 
 /* ABOUT AUTHOR */
 
