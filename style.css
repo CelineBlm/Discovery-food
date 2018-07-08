@@ -1,5 +1,5 @@
 /*
-Theme Name: Discovery
+Theme Name: wp-starter-theme
 Theme URI: http://www.celine-clemence.com
 Author: Clémence Céline
 Author URI: http://www.celine-clemence.com
@@ -48,23 +48,24 @@ body{
   flex: 1 100%;
 }
 
-.header {
-  background: tomato;
+.main-menu{
+    padding: 2em;
+    color: green;
+    text-align: center;
 }
 
-.footer {
-  background: lightgreen;
+.main-menu li{
+    padding-left: 2em;
 }
 
 .main {
   text-align: left;
 }
 
-aside{
-    background-color: rgba(255, 255, 255, 0.9);
-    padding: 5%;
-    border-radius: 10px;
+.footer {
+  background: lightgreen;
 }
+
 
 @media all and (min-width: 600px) {
   aside { flex: 1 auto;
@@ -94,6 +95,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   display: flex;
+    max-width: 100%;
   padding-right: 15px;
   padding-left: 15px;
 }
@@ -127,16 +129,6 @@ body {
     max-width: 66.666667%;
   }
 
- aside{ 
-    -webkit-box-flex: 0; 
-    -webkit-flex: 0 0 33.333333%; 
-        -ms-flex: 0 0 33.333333%; 
-            flex: 0 0 33.333333%; 
-    max-width: 25%; 
-     max-height: 50%;
-     padding-left: 2em;
-}
-
 .col {
     -webkit-box-flex: 0;
     -webkit-flex: 0 0 50%;
@@ -145,57 +137,7 @@ body {
     max-width: 50%;
   }
 
- .aside_recipe{  
-    -webkit-box-flex: 0;  
-    -webkit-flex: 0 0 25%  
-        -ms-flex: 0 0 25%;  
-            flex: 0 0 25%;  
-     max-width: 25%;  
-     clear: both;
-     display: inline-block;
-     padding: 1.5em;    
-     margin: 2em 4em 0 0;  
-     text-align: center; 
-	 border: 1px solid #FFAD4D; 
-     box-shadow: 1px 10px 15px rgba(0,0,0, .15); 
-     background-color: #fff;
-   
-       
-  }  
 
-
-.single-recipe{ 
-    padding-top: 5em; 
-} 
-
- .aside_recipe h2{  
-    font-size: 1em;  
-     font-weight: 600;  
-      color: #FFAD4D; 
-  }  
-
-.time{  
-    padding-top: 2em;  
-     color: #FFAD4D; 
-} 
-
- .recipe_details{  
-    -webkit-box-flex: 0;  
-    -webkit-flex: 0 0 100%;  
-        -ms-flex: 0 0 100%;  
-            flex: 0 0 100%;  
-    max-width: 75%;   
-     margin-top: 2em; 
-     display: inline-block;
-     position: absolute;
-     box-shadow: 1px 10px 15px rgba(0,0,0, .15); 
-     background-color: #fff;
-  }  
-
-.single-recipe h1{ 
-    padding-bottom:0.75em;  
-    text-align: center; 
-} 
 
 h1, h2, h3, h4, h5, h6, p, a, ul, span, li, img, inpot, button{ 
     margin: 0; 
@@ -253,6 +195,17 @@ img{
     display: inline-block;
 }
 
+btn{ 
+    font-size: 0.7em; 
+    padding: 0.5em; 
+    border-radius: 1px; 
+    letter-spacing: 2px; 
+    border-radius: 20px;
+    color: #fff; 
+    display: block;
+}
+
+
 li{ 
     list-style: none; 
     display: block; 
@@ -274,105 +227,8 @@ b.light-color{
 }
 
 
-
 /* ---------------------------------
-        TOUTES LES PAGES
---------------------------------- */
-
-btn{ 
-    font-size: 0.7em; 
-    padding: 0.5em; 
-    border-radius: 1px; 
-    letter-spacing: 2px; 
-    border-radius: 20px;
-    color: #fff; 
-    display: block;
-}
-
-.category-btn, .btn-date{ 
-    font-size: 0.7em; 
-    padding: 0.5em; 
-    width: 30%
-    border-radius: 1px; 
-    letter-spacing: 2px; 
-    border-radius: 20px;
-    background: #feb47b;  /* fallback for old browsers */
-    background: #feb47b;  /* Chrome 10-25, Safari 5.1-6 */
-    background: #feb47b; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    color: #fff;  
-}
-
-
-.section{ 
-    padding: 70px 0 40px; 
-}
-
-.section .heading{ 
-    padding-bottom: 70px; 
-}
-
-.center-text{ 
-    text-align: center; 
-} 
-
-.color-white{ 
-    color: #fff; 
-}
-
-.display-table{ 
-    display: table; 
-    height: 100%; 
-    width: 100%; 
-}
-
-.display-table-cell{ 
-    display: table-cell; 
-    vertical-align: middle; 
-}
-
-.card{ 
-    background: transparent; 
-    border: 0; 
-}
-
-.no-side-padding{ 
-    padding-right: 0px; 
-    padding-left: 0px; 
-}
-
-.no-left-padding{ 
-    padding-left: 0px; 
-}
-
-.no-right-padding{ 
-    padding-right: 0px; 
-}
-
-.icon{ 
-    font-size: 2em; 
-}
-
-
-.left-area{ 
-    float: left;  
-}
-
-.right-area{ 
-    float: right;  
-}
-
-.width-60{ 
-    width:60%; 
-}
-
-.width-50{ 
-    width: 50%; 
-}
-
-
-
-/* ---------------------------------
-3. MENU
+                HEADER
 --------------------------------- */
 
 header{ 
@@ -397,9 +253,154 @@ header{
     padding-left: 5em;
 }
 
+.logo {
+    display: block;
+  padding-top: 2em;
+}
 
 /* ---------------------------------
-        POST UNIQUE
+            ASIDE
+--------------------------------- */
+
+
+
+ aside{ 
+    -webkit-box-flex: 0; 
+    -webkit-flex: 0 0 33.333333%; 
+        -ms-flex: 0 0 33.333333%; 
+            flex: 0 0 33.333333%; 
+    max-width: 25%; 
+     max-height: 100%;
+     padding-left: 2em;
+}
+
+aside{
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 5%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+aside h3{    
+    padding-top: 1em;
+    color: #feb47b;
+}
+
+
+.aside_recipe{  
+    -webkit-box-flex: 0;  
+    -webkit-flex: 0 0 25%  
+        -ms-flex: 0 0 25%;  
+            flex: 0 0 25%;  
+     max-width: 25%;  
+     clear: both;
+     display: inline-block;
+     padding: 1.5em;    
+     margin: 2em 4em 0 0;  
+     text-align: center; 
+	 border: 1px solid #FFAD4D; 
+     box-shadow: 1px 10px 15px rgba(0,0,0, .15); 
+     background-color: #fff;
+   
+       
+  } 
+
+/* ---------------------------------
+        TOUTES LES PAGES
+--------------------------------- */
+
+.category-btn, .btn-date{ 
+    font-size: 0.7em; 
+    padding: 0.5em; 
+    width: 100%
+    border-radius: 1px; 
+    letter-spacing: 2px; 
+    border-radius: 20px;
+    background: #feb47b;  /* fallback for old browsers */
+    background: #feb47b;  /* Chrome 10-25, Safari 5.1-6 */
+    background: #feb47b; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #fff;  
+    margin-top: 1em;
+}
+
+
+.section{ 
+    padding: 70px 0 40px; 
+}
+
+.section .heading{ 
+    padding-bottom: 70px; 
+}
+
+.center-text{ 
+    text-align: center; 
+} 
+
+
+.display-table{ 
+    display: table; 
+    height: 100%; 
+    width: 100%; 
+}
+
+.display-table-cell{ 
+    display: table-cell; 
+    vertical-align: middle; 
+}
+
+
+/* ---------------------------------
+            SINGLE-RECETTE
+--------------------------------- */
+.recipe{
+    background: white;
+    padding: 3em;
+    margin-bottom: 3em;
+}
+
+ 
+#info_nutri{
+    margin-bottom: 1em;
+}
+
+
+.single-recipe{ 
+    padding-top: 5em; 
+} 
+ 
+
+.recipe h2{  
+    font-size: 1em;  
+    margin-bottom: 1em;
+    font-weight: 600;  
+    color: #FFAD4D;  
+} 
+
+ .recipe_details{  
+    -webkit-box-flex: 0;  
+    -webkit-flex: 0 0 100%;  
+        -ms-flex: 0 0 100%;  
+            flex: 0 0 100%;  
+    max-width: 75%;   
+     margin-top: 2em; 
+     display: inline-block;
+     position: absolute;
+  }  
+
+.recipe_details h4{
+    color: #feb47b;
+    
+}
+
+.single-recipe h1{ 
+    padding-bottom:0.75em;  
+    text-align: center; 
+} 
+
+
+
+/* ---------------------------------
+        LIST-RECETTES
 --------------------------------- */
 
 
@@ -409,15 +410,15 @@ header{
 
 .single-post{
     background-color: rgba(255, 255, 255, 0.9);
-    padding: 5%;
+    padding:5%;
     border-radius: 10px;
+    max-width: 46%;
+    margin: 0 2em 2em 0;
+    
 }
 
-
-.single-post .icons{ 
-    overflow: hidden; 
-    line-height: 30px; 
-    margin: 30px 0 10px; 
+.single-post(.last-child){
+    margin-top:5%;
 }
 
 .single-recipe img{
@@ -439,19 +440,6 @@ header{
     text-align: center;
 }
 
-
-.single-post .icons ul.social-icons{ 
-    color: #666; 
-}
-
-.single-post .icons ul.social-icons > li > a{ 
-    padding-left: 15px; 
-}
-
-.single-post .icons ul.social-icons > li > a > i{ 
-    margin-right: 10px; 
-}
-
 .single-post .title{ 
     margin: 20px 0 15px; 
 }
@@ -465,10 +453,15 @@ header{
     padding-bottom:2em;
 }
 
+
+/* ---------------------------------
+            Bouton More 
+--------------------------------- */
+
 .single-post .read-more-btn{ 
     box-shadow: 1px 10px 15px rgba(0,0,0, .15); 
 	font-size: 0.7em; 
-    width: 30%;
+    width: 50%;
     padding: 1em; 
     border-radius: 1px; 
     letter-spacing: 2px; 
@@ -481,39 +474,22 @@ header{
     margin: auto;
 }
 
+.blog-posts .load-more-btn{ 
+    clear: both; 
+    margin: 70px 0 30px; 
+}
+
 .single-post .read-more-btn:hover{ 
     box-shadow: 1px 3px 15px rgba(0,0,0, .15); 
     background: #ff7e5f;
     color: #fff; 
-}
-	
-	
-/* POST STYLE TWO */
-
-.post-style-2 .image-wrapper{ 
-    padding-right: 30px; 
-}
-
-.post-style-2 .post-details .icons{ 
-    margin-top: 0; 
-}
-
-.post-style-2 .post-details .icons .caegory-btn{ 
-    margin: 0; 
-}
-
-
-/* BOUTON PLUS */
-
-.blog-posts .load-more-btn{ 
-    clear: both; 
-    margin: 70px 0 30px; 
 }
 
 
 /* ---------------------------------
             SIDEBAR 
 --------------------------------- */
+
 
 .sidebar{  
     background-color: rgba(255, 255, 255, 0.9);
